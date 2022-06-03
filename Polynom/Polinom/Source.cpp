@@ -25,12 +25,12 @@ void main()
 	
 	cout << "Первый полином: \n" << tp1 << endl;
 	
-	int k;
+	double k;
 	cout << "Умножить полином на число: ";
 	cin >> k;
 	cout << k << " * (" << tp1 <<")"<< endl << "="<<endl;
-	tp1 = tp1 * k;
-	cout << tp1 << endl;
+	
+	cout << tp1*k << endl;
 
 	cout << "Ввод коэффициента и степеней для генерации следующего монома: \n";
 	double coeff1;
@@ -40,8 +40,8 @@ void main()
 
 	cout << "Умножение полинома на моном: \n";
 	cout <<"("<< tp1 << ") * " <<tm.coeff <<"*"<< tm << endl;
-	tp1 = tp1 * tm ;
-	cout << tp1 << endl;
+	
+	cout << tp1*tm << endl;
 
 	cout << "Ввод количества мономов для второго полинома: \n";
 	cin >> n2;
@@ -59,9 +59,9 @@ void main()
 	cout << "Второй полином: \n" << tp2 << endl << endl;
 
 	cout << "Сумма двух полиномов: \n" <<tp1<<endl<<"+"<<endl<<tp2<< endl;
-	tp1 = tp1 + tp2;
-	cout << "=" << endl << tp1<<endl<<endl;
+	
+	cout << "=" << endl << tp1+tp2<<endl<<endl;
 	cout << "Произведение:\n" << tp1 << endl << "*" << endl << tp2 << endl;
-	tp1 =tp1 * tp2 ;
-	cout << "=\n" << endl << tp1 << endl;
+
+	cout << "=\n" << endl << tp1*tp2 << endl;
 }

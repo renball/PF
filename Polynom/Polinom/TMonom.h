@@ -38,7 +38,7 @@ struct TMonom
 	//Операторы сравнения степеней
 	bool operator==(const TMonom& mon)
 	{
-		return (x == mon.x) && (y == mon.y) && (z == mon.z);
+		return (x == mon.x) && (y == mon.y) && (z == mon.z) && (coeff==mon.coeff);
 	}
 
 	bool operator<(const TMonom& mon)
